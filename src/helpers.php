@@ -2,19 +2,14 @@
 if (!function_exists('array_unique_intersect')) {
     function array_unique_intersect(array $array1, array $array2)
     {
-        $countMap = [];
+        $keyArray1 = [];
+        $keyArray2 = [];
         foreach ($array1 as $item) {
-            @$countMap[$item]++;
+            $keyArray1[$item] = 0;
         }
         foreach ($array2 as $item) {
-            @$countMap[$item]++;
+            $keyArray2[$item] = 0;
         }
-        $result = [];
-        foreach ($countMap as $key => $item) {
-            if ($item >= 2) {
-                $result[] = $key;
-            }
-        }
-        return $result;
+        return array_keys(array_intersect_key($keyArray1, $keyArray2));
     }
 }

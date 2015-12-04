@@ -1,0 +1,38 @@
+{
+    "name": "wandu/fastelper",
+    "description": "Fast Helper Assembly.",
+    "keywords": ["wandu", "helper"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Changwan Jun",
+            "email": "im@wani.kr"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "psr/http-message": "^1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wandu\\Fastelper\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wandu\\Fastelper\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <?php
 use Wandu\Fastelper\Bench;
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $x = [];
 $y = [];
@@ -22,14 +22,10 @@ shuffle($y);
 
 $bench = new Bench();
 
-$result1 = $bench->run(function () use (&$x, &$y) {
-    return array_intersect($x, $y);
+$bench->run(function () use (&$x, &$y) {
+    return array_values(array_intersect($x, $y));
 });
 
-$bench->printResult($result1);
-
-$result2 = $bench->run(function () use (&$x, &$y) {
+$bench->run(function () use (&$x, &$y) {
     return array_unique_intersect($x, $y);
 });
-
-$bench->printResult($result2);

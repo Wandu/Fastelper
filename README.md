@@ -1,6 +1,11 @@
 Wandu Fastelper
 ===
 
+[![Latest Stable Version](https://poser.pugx.org/wandu/fastelper/v/stable.svg)](https://packagist.org/packages/wandu/fastelper)
+[![Latest Unstable Version](https://poser.pugx.org/wandu/fastelper/v/unstable.svg)](https://packagist.org/packages/wandu/fastelper)
+[![Total Downloads](https://poser.pugx.org/wandu/fastelper/downloads.svg)](https://packagist.org/packages/wandu/fastelper)
+[![License](https://poser.pugx.org/wandu/fastelper/license.svg)](https://packagist.org/packages/wandu/fastelper)
+
 Fast Helper Assembly.
 
 ## Array
